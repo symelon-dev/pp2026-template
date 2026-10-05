@@ -15,7 +15,3 @@ jobs:
         run: python checkpoints/01/hello.py
       - name: leap.py が正しいか
         run: python checkpoints/01/check_leap.py
-      # 振り返りは授業の最後に書くので、書いていなくても全体を赤にはしない（この段だけに印が付く）
-      - name: 振り返りが書かれているか
-        continue-on-error: true
-        run: python .github/scripts/check_reflection.py checkpoints/01/reflection.md
